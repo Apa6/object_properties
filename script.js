@@ -84,7 +84,7 @@
 // alert( calculator.sum() );
 // alert( calculator.mul() );
 
-//? Laader
+//? Ladder
 
 // let ladder = {
 //   step: 0,
@@ -104,6 +104,75 @@
 
 // ladder.up().up().down().showStep();
  
+
+//! ПРЕОБРАЗОВАНИЕ ПРИМИТИВОВ  ОБЪЕКТОВ
+
+//todo  STRING ====================================>
+
+  //? String -> number
+    // let str = "123";
+    // console.log(Number(str));               // 123
+    // console.log(typeof(Number(str)));       // number
+
+  //  унарный + преорбразует значение в число
+    // let str1 = "123";
+    // console.log(+str);                      //  123
+    // console.log(typeof(+str));              //  number
+
+    // console.log(+"          4");            // 4
+    // console.log(+"   sdf   4 ");            // NaN 
+
+  // с помощью глобальных функций (преобразуют только те значения, которые могут быть использованы как числа)
+    // let pars = "123 abc";                   // принимает второй параметр (основание системы счисления)
+    // console.log(parseInt(str,10));          // 123
+    // console.log(typeof(parseInt(str,10)));  //  number
+
+    // let float = "123 abc";
+    // console.log(parseFloat(float));         // 123   
+    // console.log(typeof(parseFloat(float))); //  number
+
+  //? String -> boolean 
+    // console.log(!!"hello");
+                       // true
+//todo NUMBER ==========================================>
+
+  //? Number -> string
+    // let num = 123;
+    // console.log(String(num));               //  123
+    // console.log(typeof(String(num)));       // string
+
+  // прообразования методом объекта  
+    // let num1 = 123;
+    // console.log(num1.toString());           //  123
+    // console.log(typeof(num1.toString()));   // string
+
+//todo  BOOLEAN ==========================================>
+
+  //? Boolean -> string
+    // console.log(typeof(false.toString()));
+
+  //? Boolean -> number
+    // console.log(+true);                     // 1
+    // console.log(+false);                    // 0
+
+  //? Number -> boolean
+    // let bool = 1;
+    // console.log(Boolean(bool));             // true
+    // console.log(typeof(Boolean(bool)));     // boolean
+    // console.log(!!3);                        // true
+    // console.log(!!0);                        // false
+    // console.log(!!-1);                       // true
+
+//todo  INFINITY, NAN, NULL, UNDEFINED, ====================>
+ 
+    // console.log(typeof String(Infinity));   // string
+    // console.log(typeof String(NaN));        // string
+    // console.log(+"");                       // 0
+    // console.log(!!"");                      // false
+    // console.log(!!0);                       // false 
+    // console.log(!!null);                    // false
+    // console.log(!!undefined)                // false
+
 //! ФУНКЦИЯ - КОСТРУКТОР
 
 // let user = new User("Petay");       
